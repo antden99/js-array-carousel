@@ -1,21 +1,21 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-img{
+img {
     max-width: 100%;
 }
 
-.container{
+.container {
     max-width: 800px;
     width: 80%;
     margin: 0 auto;
     position: relative;
 }
 
-.controls{
+.controls {
     font-size: 40px;
     color: black;
     display: flex;
@@ -23,12 +23,23 @@ img{
     position: absolute;
     width: 100%;
     top: 45%;
-    
-    & .next{
+
+    & .next {
         margin-right: 10px;
+        color: rgb(168, 177, 156);
     }
 
-    & .prev{
+    & .prev {
         margin-left: 10px;
+        color: rgb(168, 177, 156);
+
     }
 }
+
+/* Qui praticamente dico, che tutte le immagini tranne quelle che hanno la classe active devono essere invisibili in pagina*/
+
+img:not(.active) {
+    display: none;
+}
+
+
