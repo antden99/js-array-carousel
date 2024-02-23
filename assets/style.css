@@ -12,9 +12,23 @@ img{
     max-width: 800px;
     width: 80%;
     margin: 0 auto;
+    position: relative;
 }
 
 .controls{
-    font-size: 30px;
+    font-size: 40px;
     color: black;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    top: 45%;
+    
+    & .next{
+        margin-right: 10px;
+    }
+
+    & .prev{
+        margin-left: 10px;
+    }
 }
