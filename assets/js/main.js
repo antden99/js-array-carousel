@@ -25,10 +25,25 @@ for (let index = 0; index < listaImg.length; index++) {
 
 
 //creo una funzione che al click su next vada alla slide successiva del carosello
-const next = querySelector(".next");
+const next = document.querySelector(".next");
 console.log(next);
 
+next.addEventListener("click",function(){
 
+    const selezionaSlide =document.querySelector(".active")
+    console.log(selezionaSlide);
+
+    selezionaSlide.classList.remove("active");
+    console.log(selezionaSlide);
+
+
+
+
+
+    activeImg++;
+    console.log(activeImg);
+
+})
 
 
 
@@ -40,5 +55,15 @@ console.log(next);
 
 
 //creo una funzione che al click su prev vada alla slide precedente del carosello
-const prev = querySelector(".next");
-console.log(next);
+const prev = document.querySelector(".prev");
+console.log(prev);
+
+prev.addEventListener("click",function(){
+
+    
+    activeImg--;
+    console.log(activeImg)
+    
+
+    
+})
