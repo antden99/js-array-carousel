@@ -36,19 +36,15 @@ next.addEventListener("click",function(){
     selezionaSlide.classList.remove("active");
     console.log(selezionaSlide);
 
-
-
-
-
     activeImg++;
     console.log(activeImg);
 
+    //qui mi vado a selezionare tutta la lista delle immagini che ha classe slides
+    const listaSlides = document.querySelectorAll(".slides img");
+    
+    //qui vado a selezionare il nodo successivo della dom list a cui assegno la classe "active"
+    listaSlides[activeImg].classList.add("active");
 })
-
-
-
-
-
 
 
 
@@ -60,10 +56,19 @@ console.log(prev);
 
 prev.addEventListener("click",function(){
 
-    
-    activeImg--;
-    console.log(activeImg)
-    
+    const selezionaSlide =document.querySelector(".active")
+    console.log(selezionaSlide);
 
+    selezionaSlide.classList.remove("active");
+    console.log(selezionaSlide);
+
+    activeImg--;
+    console.log(activeImg);
+
+    //qui mi vado a selezionare tutta la lista delle immagini che ha classe slides
+    const listaSlides = document.querySelectorAll(".slides img");
+    
+    //qui vado a selezionare il nodo successivo della dom list a cui assegno la classe "active"
+    listaSlides[activeImg].classList.add("active");
     
 })

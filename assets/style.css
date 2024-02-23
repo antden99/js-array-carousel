@@ -27,6 +27,7 @@ img {
     & .next {
         margin-right: 10px;
         color: rgb(168, 177, 156);
+        
     }
 
     & .prev {
